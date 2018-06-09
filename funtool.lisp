@@ -20,7 +20,7 @@
 
 (defun zero (x) 0)
 
-(defun constant (x, &optional (c, 0)) c)
+(defun constant (x &optional (c 0)) c)
 
 (defun inv (x) (/ 1 x))
 

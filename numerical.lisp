@@ -1,7 +1,7 @@
 ;; numerical analysis
 
-(load "D:\\clisp\\mylisp\\funtool.lisp")
-(load "D:\\clisp\\mylisp\\mylist.lisp")
+(load "funtool.lisp")
+(load "mylist.lisp")
 
 
 ;; basic functions
@@ -19,8 +19,8 @@
 	(/ (- (dq fun (cdr nodes)) (dq fun (butlast nodes))) (- (car (last nodes)) (car nodes)))))
 
 (defun ninterp (x nodes fun)
-	(let ((x0 (car x)))
-	(+ (funcall fun x0) (* (ninterp x (cdr nodex) #'(lambda (x) (dq fun (x0 x)))) (- x x0)))))
+	(let ((x0 (car nodes)))
+	(+ (funcall fun x0) (* (ninterp x (cdr nodes) #'(lambda (x) (dq fun (x0 x)))) (- x x0)))))
 
 
 ;; integral

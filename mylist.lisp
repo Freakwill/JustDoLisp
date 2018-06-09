@@ -1,5 +1,5 @@
 ;; list processing
-(load "D:\\clisp\\mylisp\\funtool.lisp")
+(load "funtool.lisp")
 
 ;; notation:
 ;; lst: list

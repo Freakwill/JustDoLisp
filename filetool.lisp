@@ -4,4 +4,4 @@
 		(close fp)))
 
 
-(fop "D:\\clisp\\mylisp\\mylist.lisp")
+(fop "mylist.lisp")
